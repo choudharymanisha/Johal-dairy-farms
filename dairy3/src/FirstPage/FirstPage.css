@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+.nav-container {
+    background-color: #F9F8EC;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F8EC;
+    /*align-items: center;
+    /*justify-content: center;*/
+    box-sizing: border-box;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color:#F9F8EC;
+    padding: 5px;
+    margin-top: 12px;
+}
+.nav-bar button{
+   background-color: black;
+   border-radius: 35px;
+   color:#76FF03;
+   font-family: 'Luckiest Guy';
+   
+}
+
+
+
+.image-container {
+    text-align: center; /* Center aligns the text horizontally */
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    background-color: #DCEDC8;
+    justify-content: center; /* Center aligns the text vertically */
+    align-items: center;
+    height: 150%; /* Ensures the container takes full height */
+}
+.image-text{
+    font-size: 26px;
+    font-family: 'Luckiest Guy';
+}
+.image-container img {
+    /* Make the image fill its container while maintaining aspect ratio */
+    /*margin-top: 5px;*/
+    width: 60%; /* Ensures the image takes up full width of its container */
+    height: 75%; /* Allows the image to scale proportionally */
+    max-width: 100%;
+}
+.o-btn{
+    background-color: black;
+   border-radius: 35px;
+   color:#76FF03;
+   font-family: 'Luckiest Guy';
+   padding:10px 40px;
+   
+
+}

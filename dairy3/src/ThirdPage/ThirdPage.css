@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&family=Archivo+Black&family=Bakbak+One&display=swap');
+
+.third-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #F9F8EC;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003D29;
+  font-family: 'Bowlby One';
+}
+
+.image3-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.img_1, .img_2, .img_3 {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.image3-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.h3-text {
+  margin: 10px 0;
+  font-family: 'Abril Fatface';
+  color: #003D29;
+  font-size: 24px;
+}
+
+.p3-text {
+  margin: 10px 0;
+  color: #003D29;
+  font-family: 'Adamina';
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.image3-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.img_4, .img_5, .img_6 {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.image3-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.heading-2 {
+  font-family: 'Archivo Black';
+  color: #003D29;
+  font-size: 30px;
+  margin-bottom: 5px;
+   /* Reduce the bottom margin to decrease gap */
+   text-align: center;
+   
+   color: #003D29;
+  
+ }
+
+
+.p2-text {
+  font-family: 'Bakbak One';
+  color: #003D29;
+  font-size: 28px;
+  margin-top: 5px; /* Reduce the top margin to decrease gap */
+}
+
+.image3-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .img_7, .img_8  {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
+  
