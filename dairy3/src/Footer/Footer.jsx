@@ -7,6 +7,7 @@ import lik from "../assets/Rectangle 98.png"
 import facebook from "../assets/Rectangle 99.png"
 import insta from "../assets/Rectangle 100.png"
 import logo from "../assets/logo.png"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,10 +30,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="logo">
-            <p className="logo-text">About us</p>
+          <Link to = "/Farm">
+         
+        <p className="logo-text">Our Farm</p>
+        </Link>
             <p className="logo-text">Contact us</p>
+            <Link to = "/OurMilk">
             <p className="logo-text">Our Milk</p>
-            
+            </Link>
         </div>
         <div className="logo">
             <p className="logo-text">Download the app</p>

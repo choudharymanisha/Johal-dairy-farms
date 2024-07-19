@@ -7,15 +7,23 @@ const FirstPage = () => {
   return (
     <div className='nav-container'>
       <div className="nav-bar">
+        <Link to = "/">
         <button>Contact us</button>
-        <button>Menu</button>
+        </Link>
+        <Link to = "/Farm">
+        <button>Our Farm</button>
+        </Link>
+        <Link to = "/BuyNow">
         <button>Buy Now</button>
-        <button>Our Milk</button>
+        </Link>
+        <Link to = "/SignUp">
+        <button>Sign Up</button>
+        </Link>
       </div>
       <div className="image-container">
         <p className="image-text">Buy Delicious and pure <br/> Milk online</p>
         <img src={img_1} alt="A cow" />
-        <Link to="/OrderNow">
+        <Link to="/Order">
           <button className='o-btn'>Order Now</button>
         </Link>
       </div>

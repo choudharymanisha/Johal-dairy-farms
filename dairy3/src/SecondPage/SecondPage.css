@@ -5,7 +5,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 20px;
+    padding: px;
     
     
     margin-top: 200px;
@@ -70,4 +70,7 @@
     background-color:#F9F8EC;
     color:black;
     cursor: pointer;
+}
+.sec-buttons button:hover{
+    background-color: grey;
 }

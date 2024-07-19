@@ -27,7 +27,12 @@
    border-radius: 35px;
    color:#76FF03;
    font-family: 'Luckiest Guy';
+   cursor:pointer;
+
    
+}
+.nav-bar button:hover{
+    background-color: transparent;
 }
 
 

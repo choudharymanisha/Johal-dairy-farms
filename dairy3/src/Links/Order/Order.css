@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.order-container{
+    background-color: #003D29;
+}
+
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px; 
+  /* Adjust the width as needed */
+  
+  margin: 0 auto;
+  background-color: #F9F8EC; /* Background color for the box */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column; /* Ensure content inside is stacked vertically */
+  margin-bottom: 30px; /* Add a gap between the boxes */
+}
+
+.first-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.login-text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 16px;
+  flex: 1;
+  gap: 80px;
+}
+
+.cow-img img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-left: 2px; /* Add some space between the text and the image */
+}
+
+.cow-btn {
+  background-color: black; /* Adjust button color as needed */
+  color: #76FF03;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 16px; /* Add some space between the button and the text */
+}
+
+.cow-btn:hover {
+  background-color: #45a049; /* Adjust hover color as needed */
+}
+
+.para-line {
+  font-size: 25px;
+  margin: 10px 0;
+  font-weight: 800;
+  color: black;
+  font-family: 'Bakbak One'; /* Added sans-serif as a fallback */
+}
+
+.second-box {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: flex-start; /* Align items to the top */
+  width: 700px; /* Adjust the width as needed */
+  margin: 0 auto;
+  background-color: #F9F8EC; /* Background color for the box */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column; /* Ensure content inside is stacked vertically */
+}
+
+.input-field {
+  width: 100%;
+}
+
+.input-field p {
+  margin: 8px 0;
+  font-family: 'Roboto Slab';
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.input-field input {
+  width: 100%; /* Make the input fields full width */
+  padding: 20px; /* Add padding for better spacing */
+  margin: 8px 0; /* Add margin for spacing between inputs */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 10px solid#ccc; /* Border color */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+.third-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 300px; /* Adjust the width for the small box */
+    margin: 10px auto;
+     /* Center the box within the second-box and add vertical spacing */
+    background-color:#003D29; /* Background color for the small box */
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    margin-left: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .third-content {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 500;
+
+    color: white;
+    font-family: 'Bakbak One'; /* Added sans-serif as a fallback */
+  }
+  .third-p{
+    font-family: 'Roboto Slab';
+    font-size: 22px;
+    color:black;
+    font-weight: 700;
+  }
+  .third-p2{
+    font-family: 'Roboto Slab';
+    font-size: 24px;
+    font-weight: 900;
+    color:#76FF03;
+  }
+  .cow-btn2 {
+    background-color: black; /* Adjust button color as needed */
+    color: #76FF03;
+    padding: 20px 50px;
+    margin-left: 500px;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 16px; /* Add some space between the button and the text */
+  }
+  
+  .cow-btn2:hover {
+    background-color: #45a049; /* Adjust hover color as needed */
+  }
+  .heading-second{
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    font-weight: 900;
+
+  }

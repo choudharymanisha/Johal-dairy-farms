@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+.sign-container {
+    width: 400px; /* Width of the container */
+    
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: #F9F8EC; /* Background color */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
+.h-text h1 {
+    text-align: center; /* Center the heading */
+    font-family: 'Bakbak One', sans-serif; /* Font family */
+    color: #003D29; /* Text color */
+   /* Margin below the heading */
+   font-size: 30px;
+}
+
+.in-text p {
+    margin: 10px 0 5px 0; /* Spacing around the labels */
+    font-family: 'Roboto Slab', serif; /* Font family */
+    font-size: 20px; 
+    /* Font size */
+    font-weight: 1000;
+    color: #333;
+     /* Text color */
+}
+
+.in-text input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside the input fields */
+    margin-bottom: 15px; /* Spacing between input fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+    font-family: 'Roboto Slab';  /* Font family */
+    font-size: 14px; /* Font size */
+    background-color:#D9D9D9;
+}
+.next {
+    display: block; /* Ensures the button is treated as a block-level element */
+    width: 90%; /* Full width button */
+    padding: 10px 20px; /* Padding inside the button */
+    margin: 20px 0 0 0; /* Margin at the top to create space from input fields */
+    background-color: #003D29; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-family: 'Roboto Slab', serif; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center align text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.next:hover {
+    background-color: #45a049; /* Background color on hover */
+}
+
+.next:active {
+    background-color: #2e7031; /* Background color on click */
+}
+
+.next:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 2px #76FF03; /* Outline effect when focused */
+}

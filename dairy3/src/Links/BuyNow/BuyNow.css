@@ -1,0 +1,108 @@
+.buynow {
+  background-color: #003D29;
+  width: 100vw;
+  height: 100vh;
+}
+
+.buynow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.options p {
+  font-size: 30px;
+  color: white;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color:#f9f8ec;
+  color:#003D29;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.fa-cart-shopping {
+  color: white;
+  font-size: 24px;
+  margin-right: 40px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.quantity-image {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  background-color: #f9f8ec;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+.quantity-image img {
+  width: 100px;
+  height: auto;
+}
+
+.bottle-text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bottle-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.bottle-add-box {
+  background-color: black;
+  color: #B2FF59;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.bottle-text-info {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.bottle-add .add,
+.bottle-add .remove {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f9f8ec;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
