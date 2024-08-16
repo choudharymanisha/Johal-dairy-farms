@@ -1,41 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import "./BuyNow.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import bottle_img from "../../assets/Rectangle 69.png";
+import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, removeFromCart } from "../../cartSlice";
 
 const BuyNow = () => {
-  const [cart, setCart] = useState([]);
-  const [quantities, setQuantities] = useState({ 500: 0, 1000: 0, 1500: 0 });
-
-  const handleAddToCart = (size) => {
-    setQuantities((prevQuantities) => ({
-      ...prevQuantities,
-      [size]: prevQuantities[size] + 1,
-    }));
-    setCart((prevCart) => [...prevCart, { size, quantity: 1 }]);
-  };
-
-  const handleRemoveFromCart = (size) => {
-    setQuantities((prevQuantities) => ({
-      ...prevQuantities,
-      [size]: Math.max(prevQuantities[size] - 1, 0),
-    }));
-    setCart((prevCart) => {
-      const index = prevCart.findIndex(item => item.size === size && item.quantity > 0);
-      if (index !== -1) {
-        const newCart = [...prevCart];
-        newCart[index].quantity -= 1;
-        if (newCart[index].quantity === 0) {
-          newCart.splice(index, 1);
-        }
-        return newCart;
-      }
-      return prevCart;
-    });
-  };
-
-  const totalItemsInCart = cart.reduce((acc, item) => acc + item.quantity, 0);
+  const dispatch = useDispatch();
+  const quantities = useSelector(state => state.cart.quantities);
+  const totalItemsInCart = Object.values(quantities).reduce((acc, qty) => acc + qty, 0);
 
   return (
     <div className="buynow">
@@ -43,7 +18,9 @@ const BuyNow = () => {
         <div className="options">
           <p>Order</p>
           <div className="cart-icon">
-            <FontAwesomeIcon icon={faCartShopping} className="fa-cart-shopping" />
+            <Link to="/cart">
+              <FontAwesomeIcon icon={faCartShopping} className="fa-cart-shopping" />
+            </Link>
             <span className="cart-count">{totalItemsInCart}</span>
           </div>
         </div>
@@ -54,9 +31,9 @@ const BuyNow = () => {
               <p className="bottle-text">Cow Milk {size}ml</p>
               <div className="bottle-add">
                 <div className="bottle-add-box">
-                  <button className="add" onClick={() => handleAddToCart(size)}>+</button>
+                  <button className="add" onClick={() => dispatch(addToCart(size))}>+</button>
                   Add to Cart
-                  <button className="remove" onClick={() => handleRemoveFromCart(size)}>-</button>
+                  <button className="remove" onClick={() => dispatch(removeFromCart(size))}>-</button>
                 </div>
               </div>
               <p>Quantity: {quantities[size]}</p>

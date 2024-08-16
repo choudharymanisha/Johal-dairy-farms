@@ -8,6 +8,9 @@ import img5 from "../assets/Rectangle 42.png";
 import img6 from "../assets/Rectangle 43.png";
 import img7 from "../assets/Rectangle 44.png";
 import img8 from "../assets/visit2.webp";
+import { motion } from 'framer-motion';
+import farm6 from "../assets/farm6.png";
+import { Link } from "react-router-dom";
 
 
 
@@ -69,7 +72,7 @@ const ThirdPage = () => {
    <h3> Create your account</h3>
 </div>
 <div className="p3-text">
-    <p>Firstly you have to<br/>create an account and<br/> than you can proceed futher</p>
+    <p>Firstly you have to<br/>create an account and<br/> than message us to check the availability</p>
 </div>
 </div>
 <div className="img_5">
@@ -92,32 +95,66 @@ const ThirdPage = () => {
 </div>
 
 </div>
+<div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: '20px',
+        padding: '20px',
+        backgroundColor: '#FFF',
+      }}>
+        <motion.img 
+          src={farm6} 
+          alt="Happy Cow" 
+          style={{ width: '40%', height: 'auto', marginRight: '20px' }} 
+          animate={{
+            y: [0, -25, 0], // Move up and down
+          }}
+          transition={{
+            duration: 9,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+        />
+        <div style={{ maxWidth: '40%', textAlign: 'left' }}>
+          <h2 style={{
+            fontSize: '1.5rem',
+            color: '#003D29',
+            marginBottom: '10px',
+          }}>Experience the Best Quality Milk</h2>
+          <p style={{
+            fontSize: '1rem',
+            color: '#003D29',
+            marginBottom: '10px',
+            lineHeight: '1.6',
+          }}>
+            Our happy cows ensure that you get the best milk every day. Quality milk, from healthy cows, directly to your table.
+          </p>
+          <Link to = "/buynow">
+          <motion.button
+            style={{
+              padding: '10px 20px',
+              fontSize: '1rem',
+              color: '#FFF',
+              backgroundColor: '#003D29',
+              border: 'none',
+              borderRadius: '5px',
+              cursor: 'pointer',
+            }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Buy It Now
+          </motion.button>
+          </Link>
+        </div>
+      </div>
 
-    <div className="heading-3">
-        <h1> For Buying Cows</h1>
-        <p className="p2-text">
-            For buying cows firstly you have to<br/>create a account and than proceed futher.........
-        </p>
-    </div>
-    <div className="image3-container">
-        <div className="img_7">
-            <img src = {img7}/>
-            <div className="p3-text">
-                For buying cows create <br/>your account and than check the <br/>cows availabilty and price
-
-            </div>
-            </div>
-            <div className="img_8">
-                <img src = {img8}/>
-                <div className="p3-text">
-                    After checking the price and avilability <br/> you can place a visit <br/>at our farm
-                </div>
-            </div>
-
+    
         </div>
 </div>
 
-            </div>
+            
         
     
   );

@@ -51,11 +51,7 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className="dairy-logo">
-        <div className="image-dairy">
-                <img src = {logo}/>
-            </div>
-            </div>
+      
     </>
   );
 };

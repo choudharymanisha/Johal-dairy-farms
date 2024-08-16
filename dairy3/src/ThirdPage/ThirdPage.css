@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&family=Bakbak+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&family=Archivo+Black&family=Bakbak+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&family=Bakbak+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Adamina&family=Archivo+Black&family=Bakbak+One&display=swap");
 
 .third-container {
   width: 100%;
   padding: 20px;
-  background-color: #F9F8EC;
+  background-color: #f9f8ec;
 }
 
 .heading {
   text-align: center;
   margin-bottom: 20px;
-  color: #003D29;
-  font-family: 'Bowlby One';
+  color: #003d29;
+  font-family: "Bowlby One";
 }
 
 .image3-container {
@@ -23,7 +23,9 @@
   flex-wrap: wrap;
 }
 
-.img_1, .img_2, .img_3 {
+.img_1,
+.img_2,
+.img_3 {
   flex: 1;
   margin: 10px;
   text-align: center;
@@ -36,15 +38,15 @@
 
 .h3-text {
   margin: 10px 0;
-  font-family: 'Abril Fatface';
-  color: #003D29;
+  font-family: "Abril Fatface";
+  color: #003d29;
   font-size: 24px;
 }
 
 .p3-text {
   margin: 10px 0;
-  color: #003D29;
-  font-family: 'Adamina';
+  color: #003d29;
+  font-family: "Adamina";
   font-size: 22px;
   font-weight: 1000;
 }
@@ -55,7 +57,9 @@
   flex-wrap: wrap;
 }
 
-.img_4, .img_5, .img_6 {
+.img_4,
+.img_5,
+.img_6 {
   flex: 1;
   margin: 10px;
   text-align: center;
@@ -67,34 +71,88 @@
 }
 
 .heading-2 {
-  font-family: 'Archivo Black';
-  color: #003D29;
+  font-family: "Archivo Black";
+  color: #003d29;
   font-size: 30px;
   margin-bottom: 5px;
-   /* Reduce the bottom margin to decrease gap */
-   text-align: center;
-   
-   color: #003D29;
-  
- }
+  /* Reduce the bottom margin to decrease gap */
+  text-align: center;
 
+  color: #003d29;
+}
 
 .p2-text {
-  font-family: 'Bakbak One';
-  color: #003D29;
+  font-family: "Bakbak One";
+  color: #003d29;
   font-size: 28px;
   margin-top: 5px; /* Reduce the top margin to decrease gap */
 }
 
 .image3-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.img_7,
+.img_8 {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .third-container {
+    padding: 10px; /* Adjust padding for mobile */
   }
-  
-  .img_7, .img_8  {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
+
+  .heading {
+    font-size: 24px; /* Smaller font size for mobile */
+    margin-bottom: 15px; /* Adjust bottom margin */
   }
-  
+
+  .image3-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+    gap: 20px; /* Adjust gap between items */
+  }
+
+  .img_1,
+  .img_2,
+  .img_3,
+  .img_4,
+  .img_5,
+  .img_6,
+  .img_7,
+  .img_8 {
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+    text-align: center; /* Center-align text */
+  }
+
+  .image3-container img {
+    width: 100%; /* Make images fill their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .h3-text {
+    font-size: 20px; /* Smaller font size for mobile */
+    margin: 5px 0; /* Adjust margin */
+  }
+
+  .p3-text {
+    font-size: 16px; /* Smaller font size for mobile */
+    margin: 5px 0; /* Adjust margin */
+  }
+
+  .heading-2 {
+    font-size: 24px; /* Smaller font size for mobile */
+    margin-bottom: 15px; /* Adjust bottom margin */
+    text-align: center; /* Center-align heading */
+  }
+
+  .p2-text {
+    font-size: 20px; /* Smaller font size for mobile */
+    margin-top: 10px; /* Adjust top margin */
+  }
+}

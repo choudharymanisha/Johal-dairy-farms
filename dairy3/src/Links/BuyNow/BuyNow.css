@@ -1,5 +1,5 @@
 .buynow {
-  background-color: #003D29;
+  background-color: #003d29;
   width: 100vw;
   height: 100vh;
 }
@@ -32,8 +32,8 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  background-color:#f9f8ec;
-  color:#003D29;
+  background-color: #f9f8ec;
+  color: #003d29;
   border-radius: 50%;
   padding: 5px 10px;
   font-size: 14px;
@@ -83,7 +83,7 @@
 
 .bottle-add-box {
   background-color: black;
-  color: #B2FF59;
+  color: #b2ff59;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -105,4 +105,63 @@
   color: black;
   border: none;
   border-radius: 5px;
+}
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .buynow {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 20px; /* Add padding to the bottom to avoid content getting cut off */
+  }
+
+  .buynow-container {
+    padding: 10px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .options p {
+    font-size: 24px; /* Smaller font size */
+  }
+
+  .cart-icon {
+    margin-top: 10px;
+  }
+
+  .fa-cart-shopping {
+    font-size: 20px; /* Smaller icon size */
+  }
+
+  .quantity {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quantity-image {
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Space between items */
+  }
+
+  .bottle-text {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .bottle-add-box {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .bottle-text-info {
+    margin-top: 20px;
+    font-size: 18px; /* Smaller font size */
+    padding: 0 10px; /* Padding for better readability */
+  }
+
+  .cart-count {
+    font-size: 12px; /* Adjust the cart count size */
+    padding: 3px 8px; /* Smaller padding */
+  }
 }

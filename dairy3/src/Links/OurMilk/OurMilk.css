@@ -1,82 +1,125 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Marko+One&family=Merienda:wght@300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Marko+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Marko+One&family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Marko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
 
 .whole-container {
-    background-color: #F9F8EC; /* Set your desired background color */
-    padding: 20px;
-  }
-
-
+  background-color: #f9f8ec; /* Set your desired background color */
+  padding: 20px;
+}
 
 .milk-container {
-    width: 400px; /* Adjust the width as needed */
-    margin: 0 auto;
-     /* Center the container */
-     
-    padding: 20px; /* Padding inside the container */
-    background-color: #003D29; /* Background color */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
-    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
-    text-align: center; /* Center-align the text */
+  width: 400px; /* Adjust the width as needed */
+  margin: 0 auto;
+  /* Center the container */
+
+  padding: 20px; /* Padding inside the container */
+  background-color: #003d29; /* Background color */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+  text-align: center; /* Center-align the text */
 }
 
 .milk-heading {
-    font-family:'Marko One'; /* Font family */
-    color: white; /* Text color */
-    font-size: 30px; /* Adjust the font size as needed */
-    margin-bottom: 16px; /* Margin below the heading */
+  font-family: "Marko One"; /* Font family */
+  color: white; /* Text color */
+  font-size: 30px; /* Adjust the font size as needed */
+  margin-bottom: 16px; /* Margin below the heading */
 }
 
 .milk-para {
-    font-family: 'Lily Script One';
+  font-family: "Lily Script One";
 
-    font-size: 20px; /* Font size */
-    color:white; /* Text color */
-    margin: 0; /* Remove default margins */
-    line-height: 1.5; /* Line height for better readability */
+  font-size: 20px; /* Font size */
+  color: white; /* Text color */
+  margin: 0; /* Remove default margins */
+  line-height: 1.5; /* Line height for better readability */
 }
 .milk-para2 {
-    font-family:'Merienda';
-    font-size: 1.2em;
-    font-weight: 800;
-    color:#003D29;
-    padding: 10px 20px;
-  }
-  
-  .milk-para1 {
-    font-family:'Merienda';
-    font-size: 1.2em;
-    color:#003D29;
-    font-weight: 800;
-    padding: 10px 20px;
-  }
-  .content-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-  }
-  .nutri-heading{
-    font-family:'Merienda'; /* Font family */
-    color:#003D29; /* Text color */
-    font-size: 20px; /* Adjust the font size as needed */
-     font-weight: 800;
+  font-family: "Merienda";
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #003d29;
+  padding: 10px 20px;
+}
+
+.milk-para1 {
+  font-family: "Merienda";
+  font-size: 1.2em;
+  color: #003d29;
+  font-weight: 800;
+  padding: 10px 20px;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+.nutri-heading {
+  font-family: "Merienda"; /* Font family */
+  color: #003d29; /* Text color */
+  font-size: 20px; /* Adjust the font size as needed */
+  font-weight: 800;
 }
 
 .nutri-p {
-    font-family: 'Merienda';
-    font-size: 16px;
-    font-weight: 900;
-    color:#003D29;
+  font-family: "Merienda";
+  font-size: 16px;
+  font-weight: 900;
+  color: #003d29;
 }
 
 .nutri-p hr {
-    border: 0;
-    height: 1px;
-    background-color: #003D29; /* Change this color to your desired hr color */
-    margin: 10px 0; /* Adjust the margin as needed */
+  border: 0;
+  height: 1px;
+  background-color: #003d29; /* Change this color to your desired hr color */
+  margin: 10px 0; /* Adjust the margin as needed */
+}
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .whole-container {
+    padding: 10px; /* Reduce padding for mobile */
   }
+
+  .milk-container {
+    width: 100%; /* Full width for mobile */
+    padding: 10px; /* Adjust padding */
+    margin: 0; /* Remove margin */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-shadow: none; /* Remove box shadow for mobile */
+  }
+
+  .milk-heading {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  .milk-para {
+    font-size: 18px; /* Smaller font size for mobile */
+  }
+
+  .content-container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .milk-para1,
+  .milk-para2 {
+    font-size: 16px; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .nutri-heading {
+    font-size: 18px; /* Smaller font size for mobile */
+  }
+
+  .nutri-p {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .nutri-p hr {
+    margin: 5px 0; /* Adjust margins for hr */
+  }
+}

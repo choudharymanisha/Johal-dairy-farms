@@ -1,76 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&family=Candal&family=Macondo+Swash+Caps&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubbler+One&family=Candal&family=Macondo+Swash+Caps&display=swap");
 .sec-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: px;
-    
-    
-    margin-top: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: px;
 
-    background-color: #003D29;
-    width: 100vw; /* Full viewport width */
-    height: 130vh; /* 150% of viewport height */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+  margin-top: 200px;
+
+  background-color: #003d29;
+  width: 100vw; /* Full viewport width */
+  height: 130vh; /* 150% of viewport height */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 .img-container {
-    flex: 3;
-    text-align: center;
-    max-width: 60%;
-     /* Limit max width for responsiveness */
-     
+  flex: 3;
+  text-align: center;
+  max-width: 60%;
+  /* Limit max width for responsiveness */
 }
 
 .img-container img {
-    max-width: 60%; /* Ensure the image doesn't overflow its container */
-    height: 50%; /* Maintain aspect ratio */
-    border-radius: 10px;
-    margin-top: 10px;
+  max-width: 60%; /* Ensure the image doesn't overflow its container */
+  height: 50%; /* Maintain aspect ratio */
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .text-container {
-    flex: 1;
-    padding: 20px;
-    margin-top: 50px;
-    max-width: 60%; 
-    /* Limit max width for responsiveness */
+  flex: 1;
+  padding: 20px;
+  margin-top: 50px;
+  max-width: 60%;
+  /* Limit max width for responsiveness */
 }
 
 .h-text {
-    font-size: 75px;
-    margin: 3px 0;
-    color: white;
-    font-family: 'Macondo Swash Caps',  /* Added cursive as a fallback */
+  font-size: 75px;
+  margin: 3px 0;
+  color: white;
+  font-family: "Macondo Swash Caps"; /* Added cursive as a fallback */
 }
 
 .p-text {
-    font-size: 48px;
-    margin: 10px 0;
-    color: white;
-    font-family: 'Bubbler One', sans-serif; /* Added sans-serif as a fallback */
+  font-size: 48px;
+  margin: 10px 0;
+  color: white;
+  font-family: "Bubbler One", sans-serif; /* Added sans-serif as a fallback */
 }
 
 .sec-buttons {
-    display: flex;
-    gap: 80px;
-    margin-left: 15px;
-    margin-top: 40px;
+  display: flex;
+  gap: 80px;
+  margin-left: 15px;
+  margin-top: 40px;
 }
 
 .sec-buttons button {
-    padding: 15px 25px;
-    font-size: 20px;
-    font-weight: 1000;
-    border: none;
-    font-family: 'Candal';
-    border-radius: 20px;
-    background-color:#F9F8EC;
-    color:black;
-    cursor: pointer;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 1000;
+  border: none;
+  font-family: "Candal";
+  border-radius: 20px;
+  background-color: #f9f8ec;
+  color: black;
+  cursor: pointer;
 }
-.sec-buttons button:hover{
-    background-color: grey;
+.sec-buttons button:hover {
+  background-color: grey;
+}
+/* Mobile View Styles */
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .sec-container {
+    flex-direction: row; /* Stack items vertically on mobile */
+    align-items: center; /* Center-align items horizontally */
+    padding: 10px; /* Add padding */
+    margin-top: 0px; /* Adjust top margin */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .img-container {
+    width: 100%; /* Full width on mobile */
+    max-width: 100%; /* Ensure image container uses full width */
+    margin-bottom: 0px; /* Reduce space below image */
+  }
+
+  .img-container img {
+    width: 100%; /* Make image fill container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image doesn't overflow */
+  }
+
+  .text-container {
+    width: 100%; /* Full width on mobile */
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center-align text */
+  }
+
+  .h-text {
+    font-size: 30px; /* Smaller font size for mobile */
+    margin: 5px 0; /* Adjust margin */
+  }
+
+  .p-text {
+    font-size: 18px; /* Smaller font size for mobile */
+    margin: 5px 0; /* Adjust margin */
+  }
+
+  .sec-buttons {
+    flex-direction: row; /* Stack buttons vertically on mobile */
+    gap: 10px; /* Adjust gap between buttons */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Adjust top margin */
+    width: 100%; /* Full width for buttons container */
+  }
+
+  .sec-buttons button {
+    padding: 5px 10px; /* Adjust padding for buttons */
+    font-size: 16px; /* Smaller font size for mobile */
+    width: 100%; /* Full width for buttons */
+  }
 }

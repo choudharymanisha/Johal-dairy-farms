@@ -1,20 +1,40 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
-import landing_img from '../assets/cow landing.jpg';
+import farm10 from '../assets/farm10.png';
+import { motion } from 'framer-motion';
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <div className="landing-image">
-        <img src={landing_img} alt="Landing" />
-      </div>
       <div className="landing-content">
         <div>
-          <h1 className='main-head'>Welcome to</h1>
-          <p className="johal-name"> Johal's Dairy Farms</p>
+          <h1 className="main-head">Welcome to</h1>
+          <p className="johal-name">Johal's Dairy Farms</p>
         </div>
-        <Link to="/">
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginTop: '0px',
+          padding: '20px',
+          overflow: 'hidden', // To ensure the image stays within the container during animation
+        }}>
+          <motion.img
+            src={farm10}
+            alt="Happy Cow"
+            style={{ width: '500px', height: '200px' }}
+            animate={{
+              x: ['-100%', '100%'], // Move from left to right
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: 'linear',
+            }}
+          />
+        </div>
+        <Link to="/main">
           <button>Proceed to Buy Milk</button>
         </Link>
       </div>

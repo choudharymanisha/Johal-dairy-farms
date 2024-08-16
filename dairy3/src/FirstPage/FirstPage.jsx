@@ -16,7 +16,7 @@ const FirstPage = () => {
         <Link to = "/BuyNow">
         <button>Buy Now</button>
         </Link>
-        <Link to = "/SignUp">
+        <Link to = "/login">
         <button>Sign Up</button>
         </Link>
       </div>

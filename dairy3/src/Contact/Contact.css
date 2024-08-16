@@ -1,0 +1,146 @@
+/* General Styles */
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #003d29; /* Adjust background color */
+}
+
+.w-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.awesome {
+  position: relative;
+}
+
+.awesome span:first-child {
+  font-size: 3rem;
+  color: #f9f8ec; /* Adjust color */
+}
+
+.awesome span:nth-child(2) {
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #f9f8ec;
+}
+
+.blur {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(72px);
+}
+
+.s-blur1 {
+  top: -10%;
+  left: -30%;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+.c-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.user {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color); /* Adjust border color */
+  font-size: 1rem;
+}
+
+.user:focus {
+  outline: none;
+  border-color: var(--secondary-color); /* Adjust focus border color */
+  box-shadow: 0 0 5px var(--secondary-color); /* Adjust focus box-shadow */
+}
+
+.button {
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f9f8ec; /* Adjust button background color */
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: gainsboro; /* Adjust hover color */
+}
+
+.c-blur1 {
+  bottom: -10%;
+  right: -30%;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+span {
+  font-size: 1.2rem;
+  color: #f9f8ec; /* Adjust text color */
+  margin-top: 20px;
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .w-left {
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .awesome span:first-child {
+    font-size: 2.5rem;
+  }
+
+  .awesome span:nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  .s-blur1,
+  .c-blur1 {
+    display: none;
+  }
+
+  .c-right {
+    justify-content: flex-start;
+  }
+
+  form {
+    max-width: 100%;
+    gap: 15px;
+  }
+
+  .user,
+  .button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
