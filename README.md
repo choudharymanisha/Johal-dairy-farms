@@ -8,6 +8,7 @@
   - Redux Toolkit
   - Framer Motion
   - Routing
+  - Figma
 
 ### The link to project is:
 [Johal's Dairy Farms](https://johaldairy.netlify.app/)
