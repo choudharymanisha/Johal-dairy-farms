@@ -2,13 +2,7 @@
 
 ## This website is designed to provide the best milk across the city by ordering milk directly from our farms.
 
-### The technologies used in this project are:
-  - React
-  - CSS
-  - Redux Toolkit
-  - Framer Motion
-  - Routing
-  - Figma
+
 
 ### The link to project is:
 [Johal's Dairy Farms](https://johaldairy.netlify.app/)
@@ -36,6 +30,11 @@
 ![Screenshot 2024-08-16 193037](https://github.com/user-attachments/assets/6e2549e3-2c0b-4991-b993-c8608bf24efe)
 ## this is the thanks for ordering page when you click on checkout
 ![Screenshot 2024-08-16 193055](https://github.com/user-attachments/assets/175004ad-eb46-41af-a359-5a0657c685aa)
-
-
+### The application is built using the following technologies:
+ - **Figma**: for making the design .
+- **React**: JavaScript library for building user interfaces.
+- **HTML**: Markup language for structuring web pages.
+- **CSS**: Stylesheet language for styling web pages.
+- **React Router**: Declarative routing for React applications.
+  - **Redux Tookit**: for Manging the states effectively .
 
